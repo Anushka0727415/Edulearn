@@ -1,8 +1,8 @@
-# 📚 EduTutorAI - AI Tutor for Quality Education
+# 📚 Edulearn - AI Tutor for Quality Education
 
 ## 🌍 Supporting UN Sustainable Development Goal 4
 
-**EduTutorAI** is an AI-powered chatbot that helps students in Classes 5-10 get instant, personalized academic help. It explains concepts in simple language, solves doubts, and generates practice quizzes.
+**Edulearn** is an AI-powered chatbot that helps students in Classes 5-10 get instant, personalized academic help. It explains concepts in simple language, solves doubts, and generates practice quizzes.
 
 ## 🎯 Problem It Solves
 
