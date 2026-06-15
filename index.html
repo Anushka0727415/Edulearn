@@ -1,0 +1,85 @@
+<!-- templates/index.html - Main Chat Interface -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>EduTutorAI - Your AI Study Buddy | SDG 4 Quality Education</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <h1>EduTutorAI</h1>
+            </div>
+            <p class="tagline">Your 24/7 AI Tutor · SDG 4: Quality Education for All</p>
+        </header>
+
+        <!-- Grade Selector -->
+        <div class="grade-section">
+            <label for="gradeSelect">📖 Select your class:</label>
+            <select id="gradeSelect" class="grade-select">
+                <option value="5">Class 5</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8" selected>Class 8</option>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+            </select>
+        </div>
+
+        <!-- Tabs: Doubt Solver & Quiz -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="doubt">❓ Ask Doubt</button>
+            <button class="tab-btn" data-tab="quiz">📝 Practice Quiz</button>
+        </div>
+
+        <!-- Doubt Solver Tab -->
+        <div id="doubtTab" class="tab-content active">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-icon">🤖</div>
+                        <div class="message-bubble">
+                            👋 Hello! I'm EduTutorAI.<br>
+                            Ask me any question from Maths, Science, English, Social Studies, or any subject.<br>
+                            I'll explain in a way that's easy to understand for your class!
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <textarea id="userQuestion" placeholder="Type your question here... (e.g., Explain photosynthesis, Solve 2x + 5 = 15, What is a pronoun?)" rows="2"></textarea>
+                    <button id="sendBtn" class="send-btn">Send ➤</button>
+                </div>
+                <button id="clearChatBtn" class="clear-btn">🗑️ Clear Chat</button>
+            </div>
+        </div>
+
+        <!-- Quiz Tab -->
+        <div id="quizTab" class="tab-content">
+            <div class="quiz-container">
+                <div class="quiz-input-group">
+                    <label for="topicInput">📚 Enter topic for quiz:</label>
+                    <input type="text" id="topicInput" placeholder="e.g., Fractions, Photosynthesis, Parts of Speech, The Solar System">
+                    <button id="generateQuizBtn" class="generate-quiz-btn">✨ Generate Quiz</button>
+                </div>
+                <div class="quiz-result" id="quizResult">
+                    <p class="quiz-placeholder">Click "Generate Quiz" to get a 5-question practice test!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🌍 Supporting UN Sustainable Development Goal 4: Quality Education</p>
+            <p>💡 Free for students · Works on mobile · Ask anything, anytime</p>
+        </footer>
+    </div>
+
+    <script src="{static/script.js}"></script>
+</body>
+</html>
